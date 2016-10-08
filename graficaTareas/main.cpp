@@ -103,7 +103,7 @@ void updateAEL (vector<Edge>& actEdges,int currentY)
 
 }
 
-void fill()
+void fillPolygon()
 {
     glColor3f(1,1,1);
     gluOrtho2D( 0, glutGet(GLUT_WINDOW_WIDTH), 0, glutGet(GLUT_WINDOW_HEIGHT) );
@@ -243,7 +243,7 @@ int main(int argc, char **argv)
     glutInitWindowPosition(900, 50);
     glutCreateWindow("Fill");
     myInit();
-    glutDisplayFunc(fill);
+    glutDisplayFunc(fillPolygon);
 
 
     glutInitWindowSize(350, 350);

@@ -29,13 +29,8 @@ public:
 
 
 
-//*************EDGE TABLE METHODS
 inline void insertEdge (vector<Edge>& vect, const Edge& item)
 {
-    /*vector<Edge>::iterator curr = vect.begin();
-
-    while ((curr != vect.end()) && ((*curr).XofYMin < item.XofYMin))
-        curr++;*/
     unsigned int i=0;
     for(;i<vect.size();++i)
         if(vect[i].XofYMin > item.XofYMin)
